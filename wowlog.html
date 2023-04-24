@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<!--
+  Fetch a file from the server.
+-->
+<title>wowlog</title>
+hello
+<script>
+'use strict'
+let response = 'nothing yet'
+let txt = 'nothing yet'
+console.log('hey')
+async function fetchStuff() {
+  response = await fetch('data/a.txt')
+  console.log(response)
+  txt = await response.text()
+  console.log(txt)
+}
+fetchStuff()
+</script>
